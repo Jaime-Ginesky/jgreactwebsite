@@ -1,5 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Fragment } from 'react';
+
+
 const Navigation = () => {
     return(
         <Fragment>
@@ -10,3 +12,5 @@ const Navigation = () => {
         </Fragment>
     )
 }
+
+export default Navigation;
