@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-import './mode.styles.scss';
-
 
 const Mode = () => {
    const [theme, setTheme] = useState('light');
