@@ -1,13 +1,25 @@
 import { Outlet } from 'react-router-dom';
 import { Fragment } from 'react';
+import Mode from '../../components/Mode/mode.component';
 
 
 const Navigation = () => {
     return(
         <Fragment>
-           <div>
-             <h1>Navigation Bar</h1>
-           </div>
+           <NavigationContainer>
+             <LogoContainer to='/'>
+              <JgLogo className="logo">JG</JgLogo>
+             </LogoContainer>
+             <NavLinks>
+              <NavLink to='/about'>
+                About
+              </NavLink>
+              <NavLink to='/contact'>
+                Contact
+              </NavLink>
+             </NavLinks>
+             <Mode />
+             </NavigationContainer>
           <Outlet />
         </Fragment>
     )
