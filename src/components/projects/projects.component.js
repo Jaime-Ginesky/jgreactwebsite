@@ -1,4 +1,4 @@
-import CategoryMenuItem from '../category-menu-item/category-menu-item.js';
+import CategoryMenuItem  from '../category-menu-item/category-menu-item.component';
 
 const categories = [
     {
@@ -23,10 +23,9 @@ const categories = [
   
   ]
 
-  const ProjectMenu = () => {
+   export const ProjectMenu = () => {
     return (
-      
-        <div className="project-container">
+       <div className="project-container">
           {categories.map((category) => (
             <CategoryMenuItem key={category.id} category={category} />
           //   <div className='card'>
@@ -46,4 +45,4 @@ const categories = [
     )
   }
 
-  export default ProjectMenu;
+  
