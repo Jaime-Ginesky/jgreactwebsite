@@ -1,28 +1,49 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-export const NavigationContainer = styled.div`
-      height: 70px;
-      width: 100px;
-      background-color: 'fff';
+
+const Bar = styled.nav`
+font-size: 18px;
+background-image: linear-gradient(260deg, rgb(42,244,152,255) 0%, #3498db 100%);
+border: 1px solid rgba(0,0,0,0.2);
+padding-bottom: 10px;
+@media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 25px;
-`;
-export const NavLinks = styled.div`
-     padding: 10px 15px;
-     cursor: pointer;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+}`
+
+const MainNav = styled.ul`
+list-style-type: none;
+display: ${props => props.display };
+flex-direction: column;
+@media (min-width: 768px) {
+      display: flex !important;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-contyent: flex-end;
+}`
+
+const NavLi = styled.li`
+text-align: center;
+margin: 15px auto;
 `
 
-// export const NavLinks = styled.div`
-// width: 50%;
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-// `;
+const NavLink = styled.a`
+list-style-type:: none;
+display: flex;
+flex-direction: column;
+@media (min-width: 768px) {
+      margin: 0px 10px;
+}`
 
-export const NavLink = styled(Link)`
-padding: 10px 15px;
-cursor: pointer;
-`;
+const NavBarToggle = styled.span`
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255,255,255,0.8);
+  font-size: 24px;
+  `
+  

@@ -1,15 +1,22 @@
 import { Outlet } from 'react-router-dom';
-import { Fragment } from 'react';
 
 
-import { NavigationContainer, NavLink, NavLinks  } from './navigation.styles';
+
+import { Bar, MainNav, NavLi,
+NavLink, NavBarToggle  } from './navigation.styles';
 
 
 const Navigation = () => {
+
+
     return(
-        <Fragment>
-           <NavigationContainer>
+        <Bar>
+           <NavBarToggle onClick={() => }>
+           </NavBarToggle>
              <NavLinks>
+             <NavLink to='/home'>
+                Home
+              </NavLink>
               <NavLink to='/about'>
                 About
               </NavLink>
@@ -17,9 +24,9 @@ const Navigation = () => {
                 Contact
               </NavLink>
              </NavLinks>
-             </NavigationContainer>
+            
           <Outlet />
-        </Fragment>
+        </Bar>
     )
 }
 
