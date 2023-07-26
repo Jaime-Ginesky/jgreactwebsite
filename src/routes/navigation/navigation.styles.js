@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-const Bar = styled.nav`
+export const Bar = styled.nav`
 font-size: 18px;
 background-image: linear-gradient(260deg, rgb(42,244,152,255) 0%, #3498db 100%);
 border: 1px solid rgba(0,0,0,0.2);
@@ -14,7 +14,7 @@ padding-bottom: 10px;
       align-items: center;
 }`
 
-const MainNav = styled.ul`
+export const MainNav = styled.ul`
 list-style-type: none;
 display: ${props => props.display };
 flex-direction: column;
@@ -25,12 +25,12 @@ flex-direction: column;
       justify-contyent: flex-end;
 }`
 
-const NavLi = styled.li`
+export const NavLi = styled.li`
 text-align: center;
 margin: 15px auto;
 `
 
-const NavLink = styled.a`
+export const NavLink = styled.a`
 list-style-type:: none;
 display: flex;
 flex-direction: column;
@@ -38,7 +38,7 @@ flex-direction: column;
       margin: 0px 10px;
 }`
 
-const NavBarToggle = styled.span`
+export const NavBarToggle = styled.span`
   position: absolute;
   top: 10px;
   right: 20px;
@@ -46,4 +46,6 @@ const NavBarToggle = styled.span`
   color: rgba(255,255,255,0.8);
   font-size: 24px;
   `
-  
+export const Hamburger = styled.img`
+  content: <FontAwesomeIcon icon={faBars} style={{color: "#d05435",}} />
+  `

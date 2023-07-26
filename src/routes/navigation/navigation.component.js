@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 
 import { Bar, MainNav, NavLi,
-NavLink, NavBarToggle  } from './navigation.styles';
+NavLink, NavBarToggle, Hamburger } from './navigation.styles';
 
 
 const Navigation = () => {
@@ -11,19 +11,24 @@ const Navigation = () => {
 
     return(
         <Bar>
-           <NavBarToggle onClick={() => }>
+           <NavBarToggle onClick={NavBarToggle}>
+            <Hamburger />
            </NavBarToggle>
-             <NavLinks>
-             <NavLink to='/home'>
-                Home
-              </NavLink>
-              <NavLink to='/about'>
+             <MainNav>
+              <NavLi>
+                <NavLink to='/home'>Home</NavLink>
+              </NavLi>
+              <NavLi>
+                <NavLink to='/about'>
                 About
-              </NavLink>
-              <NavLink to='/contact'>
+                </NavLink>
+              </NavLi>
+              <NavLi>
+                <NavLink to='/contact'>
                 Contact
-              </NavLink>
-             </NavLinks>
+                </NavLink>
+              </NavLi>
+            </MainNav>
             
           <Outlet />
         </Bar>
