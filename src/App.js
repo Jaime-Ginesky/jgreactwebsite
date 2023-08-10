@@ -4,8 +4,9 @@ import { Fragment } from 'react';
 // import { useState, useEffect } from 'react';
 // import styled,  { ThemeProvider } from 'styled-components';
 // import { lightTheme, darkTheme, GlobalStyles } from './themes/themes.styles';
-import Navigation  from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
+import Navigation from './routes/navigation/navigation.component';
+
 import About from './routes/about/about';
 import Contact from './routes/contact/contact';
 
@@ -19,8 +20,8 @@ const App = () => {
   <Routes>
     <Route path='/' element={<Navigation />}>
      <Route index element={<Home /> } />
-     <Route path='/about' element={<About />} />
-     <Route path='/contact' element={<Contact /> } />
+     <Route path='about' element={<About />} />
+     <Route path='contact' element={<Contact /> } />
     </Route>
   </Routes>
 </Fragment>

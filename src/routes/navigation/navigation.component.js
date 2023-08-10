@@ -1,9 +1,8 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 
 
-import { Bar, MainNav, NavLi,
-NavLink, NavBarToggle, Hamburger } from './navigation.styles';
+import { Bar, MainNav, NavLi, NavBarToggle, Hamburger } from './navigation.styles';
 
 
 const Navigation = () => {
@@ -16,21 +15,20 @@ const Navigation = () => {
            </NavBarToggle>
              <MainNav>
               <NavLi>
-                <NavLink to='/home'>Home</NavLink>
+                <Link className='nav-link' to='/'>Home </Link>
               </NavLi>
               <NavLi>
-                <NavLink to='/about'>
-                About
-                </NavLink>
+                <Link className='nav-link' to='/about'>
+                 About 
+                </Link>
               </NavLi>
               <NavLi>
-                <NavLink to='/contact'>
-                Contact
-                </NavLink>
+                <Link className='nav-link' to='/contact'>
+                 Contact
+                </Link>
               </NavLi>
             </MainNav>
-            
-          <Outlet />
+            <Outlet />
         </Bar>
     )
 }

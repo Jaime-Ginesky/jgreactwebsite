@@ -1,9 +1,9 @@
 const Contact = () => {
     return (
        <div>
-        <title>
+        <h1>
             REACH OUT!
-        </title>
+        </h1>
         
        </div>
     )
