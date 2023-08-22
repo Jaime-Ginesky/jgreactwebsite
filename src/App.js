@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import Themes from './components/themes/themes.component';
+import Context from './context/context.component';
+import { ThemeProvider } from './components/themes/themes.component';
 import { Fragment } from 'react';  
 // import { useState, useEffect } from 'react';
 // import styled,  { ThemeProvider } from 'styled-components';
@@ -16,7 +17,9 @@ const App = () => {
 
   return (
     <Fragment>
-    <Themes />
+    <ThemeProvider>
+     <Context />
+     </ThemeProvider>
   <Routes>
     <Route path='/' element={<Navigation />}>
      <Route index element={<Home /> } />
