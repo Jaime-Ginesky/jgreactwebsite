@@ -3,20 +3,26 @@ import styled from 'styled-components';
 
 
   export const MainContainer = styled.div`
-    body {
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      align-content: center;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
       background: var(--background-color);
-    }
+
 
     h3 {
-  margin: 0;
-  padding: 10px;
-  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  padding: 0px;
+  text-align: center;
   font-family: "Cormorant Garamond", serif;
     }
+   
     h1 {
       color: var(--image-text-color);
       opacity: 80%;
@@ -26,6 +32,10 @@ import styled from 'styled-components';
       padding-top: 80px;
     }
     h2 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: fixed;
       color:steelblue;
       opacity: 60%;
       font-size: 24px;

@@ -6,7 +6,7 @@ import { MainContainer } from './home.styles';
 
 const Home = () => {
 return(
-  <Fragment>
+  <>
     <MainContainer>
     <h3>Hello, My Name is</h3>
      <h1>JaimeGinesky</h1>
@@ -14,7 +14,7 @@ return(
      <ProjectMenu />
      <Outlet />
      </MainContainer>
-    </Fragment>
+    </>
 )
 }
 
