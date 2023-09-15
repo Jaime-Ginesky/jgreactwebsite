@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import styled,  { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme, GlobalStyles } from './themes.styles';
 
@@ -6,14 +6,14 @@ const StyledApp = styled.div`
 color: ${(props) => props.theme.color};
 `
 
-const Themes = () => {
+export const Themes = () => {
     const [theme,setTheme] = useState('light');
     const isDarkTheme = theme === "dark";
    
     const toggleTheme = () => {
       const updatedTheme = isDarkTheme ? "light" : "dark";
-      setTheme(lightTheme);
-      localStorage.setItem("theme", lightTheme);
+      setTheme(updatedTheme);
+      localStorage.setItem("theme", updatedTheme);
     };
   
     useEffect(() => {
@@ -27,31 +27,13 @@ const Themes = () => {
    }
     },[]);
 
-// export const ThemeContext = React.createContext()
-// export const ThemeUpdateContext = React.createContext()
-
-// export const useTheme = () => {
-//     return useContext(ThemeContext)
-// }
-
-// export const useThemeUpdate = () => {
-//     return useContext(ThemeUpdateContext)
-// }
-
-// export const ThemeProvider =({ children }) => {
-//     const [darkTheme, setDarkTheme] = useState(true)
-
-//     const toggleTheme = () => {
-//         setDarkTheme(prevDarkTheme => !prevDarkTheme )
-//     }
 
 return (
-    
-    <ThemeContext.Provider value={darkTheme}>
-      <ThemeUpdateContext.Provider value={toggleTheme}>
-        {children}
-      </ThemeUpdateContext.Provider>
-    </ThemeContext.Provider>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyles />
+      <StyledApp></StyledApp>
+      <button onClick={toggleTheme}>Theme</button>
+    </ThemeProvider>
     
 )
 }

@@ -1,8 +1,5 @@
-import { Outlet, Link } from 'react-router-dom';
 
-
-
-import { Bar, MainNav, NavLi, NavBarToggle, Hamburger } from './navigation.styles';
+import { Bar, MainNav, NavLi, NavLink,NavBarToggle, Hamburger } from './navigation.styles';
 
 
 const Navigation = () => {
@@ -15,20 +12,19 @@ const Navigation = () => {
            </NavBarToggle>
              <MainNav>
               <NavLi>
-                <Link className='nav-link' to='/'>Home </Link>
+                <NavLink to='/'>Home</NavLink>
               </NavLi>
               <NavLi>
-                <Link className='nav-link' to='/about'>
+                <NavLink to='/about'>
                  About 
-                </Link>
+                </NavLink>
               </NavLi>
               <NavLi>
-                <Link className='nav-link' to='/contact'>
+                <NavLink to='/contact'>
                  Contact
-                </Link>
+                </NavLink>
               </NavLi>
             </MainNav>
-            <Outlet />
         </Bar>
     )
 }

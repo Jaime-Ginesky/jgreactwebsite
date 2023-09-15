@@ -1,11 +1,11 @@
 const Contact = () => {
     return (
-       <div>
+       <header>
         <h1>
             REACH OUT!
         </h1>
         
-       </div>
+       </header>
     )
 }
 

@@ -45,4 +45,6 @@ const categories = [
     )
   }
 
+  export default ProjectMenu;
+
   

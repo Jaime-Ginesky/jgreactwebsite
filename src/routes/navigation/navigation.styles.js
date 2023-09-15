@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 
 export const Bar = styled.nav`
@@ -30,7 +31,7 @@ text-align: center;
 margin: 15px auto;
 `
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
 list-style-type:: none;
 display: flex;
 flex-direction: column;
