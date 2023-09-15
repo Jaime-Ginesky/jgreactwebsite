@@ -1,19 +1,20 @@
 import { Outlet } from 'react-router-dom';
-import { ProjectMenu } from '../../components/projects/projects.component';
+import { Fragment } from 'react';
+import ProjectMenu from '../../components/projects/projects.component';
 
 import { MainContainer } from './home.styles';
 
-export const Home = () => {
+const Home = () => {
 return(
-  <header>
+  <Fragment>
     <MainContainer>
-    <h3>Hello, My name is</h3>
+    <h3>Hello, My Name is</h3>
      <h1>JaimeGinesky</h1>
      <h2>Front-end Developer based in Los Angeles, CA</h2>
      <ProjectMenu />
      <Outlet />
      </MainContainer>
-    </header>
+    </Fragment>
 )
 }
 

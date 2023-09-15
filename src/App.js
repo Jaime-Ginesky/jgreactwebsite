@@ -15,8 +15,6 @@ const App = () => {
   return (
     <Fragment>
      <Themes />
-
-     
   <Routes>
     <Route path='/' element={<Navigation />}>
      <Route index element={<Home /> } />
@@ -24,7 +22,9 @@ const App = () => {
      <Route path='contact' element={<Contact /> } />
     </Route>
   </Routes>
+  <Home />
 </Fragment>
+
   );
 }
 

@@ -1,13 +1,11 @@
 
 import { Bar, MainNav, NavLi, NavLink,NavBarToggle, Hamburger } from './navigation.styles';
-
-
+import { Themes } from '../../components/themes/themes.component';
 const Navigation = () => {
-
-
+   
     return(
         <Bar>
-           <NavBarToggle onClick={NavBarToggle}>
+           <NavBarToggle onClick ={Themes}>
             <Hamburger />
            </NavBarToggle>
              <MainNav>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import styled,  { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme, GlobalStyles } from './themes.styles';
+import { LightTheme, DarkTheme, GlobalStyles, ToggleButton } from './themes.styles';
 
 const StyledApp = styled.div`
 color: ${(props) => props.theme.color};
@@ -29,10 +29,10 @@ export const Themes = () => {
 
 
 return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === 'light' ? LightTheme : DarkTheme}>
       <GlobalStyles />
       <StyledApp></StyledApp>
-      <button onClick={toggleTheme}>Theme</button>
+      <ToggleButton onClick={toggleTheme}>Theme</ToggleButton>
     </ThemeProvider>
     
 )
