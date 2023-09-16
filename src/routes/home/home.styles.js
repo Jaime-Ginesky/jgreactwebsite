@@ -50,3 +50,22 @@ import styled from 'styled-components';
     grid-gap: 10px;
    `;
 
+   export const SlideDown = styled.div `
+   
+    width:100%;
+    overflow:hidden;
+    margin-left: 450px;
+    max-width:500px;
+
+  
+   h2 {
+    text-align: center;
+    animation:2s slide-down 2s forwards;
+       transform:translateY(-100%);
+    @keyframes slide-down {
+    to {
+      transform:translateX(0%);
+    }
+  }
+   `
+
