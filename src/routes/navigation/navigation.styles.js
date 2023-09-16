@@ -56,6 +56,3 @@ export const NavBarToggle = styled.span`
   color: rgba(255,255,255,0.8);
   font-size: 24px;
   `
-export const Hamburger = styled.img`
-  content: <FontAwesomeIcon icon={faBars} style={{color: "#d05435",}} />
-  `

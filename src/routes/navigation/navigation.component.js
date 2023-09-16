@@ -1,27 +1,30 @@
-
-import { Bar, MainNav, NavLi, NavLink,NavBarToggle, Hamburger } from './navigation.styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Bar, MainNav, NavLi, NavLink, NavBarToggle } from './navigation.styles';
 import { Themes } from '../../components/themes/themes.component';
+
+
 const Navigation = () => {
-   
+  
     return(
         <Bar>
            <NavBarToggle onClick ={Themes}>
-            <Hamburger />
            </NavBarToggle>
              <MainNav>
               <NavLi>
-                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/'>HOME</NavLink>
               </NavLi>
               <NavLi>
                 <NavLink to='/about'>
-                 About 
+                 ABOUT 
                 </NavLink>
               </NavLi>
               <NavLi>
                 <NavLink to='/contact'>
-                 Contact
+                 CONTACT
                 </NavLink>
               </NavLi>
+              <FontAwesomeIcon icon={faBars} transform="right-850 down-15" style={{color: "#323358",}} />
             </MainNav>
         </Bar>
     )
