@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export const Bar = styled.nav`
 font-size: 18px;
-background-image: linear-gradient(260deg, rgb(42,244,152,255) 0%, #3498db 100%);
+background-image: steelblue;
 border: 1px solid rgba(0,0,0,0.2);
 padding-bottom: 10px;
 @media (min-width: 768px) {
@@ -23,7 +23,7 @@ flex-direction: column;
       display: flex !important;
       margin-right: 30px;
       flex-direction: row;
-      justify-contyent: flex-end;
+      justify-content: flex-end;
 }`
 
 export const NavLi = styled.li`
@@ -32,7 +32,16 @@ margin: 15px auto;
 `
 
 export const NavLink = styled(Link)`
-list-style-type:: none;
+list-style-type: none;
+text-decoration: none;
+color: #323358;
+&:hover {
+      color: #323358;
+      opacity: 60%;
+}
+&:visited {
+      color:#4682B4;
+}
 display: flex;
 flex-direction: column;
 @media (min-width: 768px) {
