@@ -13,13 +13,7 @@ import styled from 'styled-components';
   
 
      h3 {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        align-content: center;
         position: fixed;
-        padding: 0px;
-        text-align: center;
         font-family: "Cormorant Garamond", serif;
      }
    
@@ -36,18 +30,6 @@ import styled from 'styled-components';
        font-family: "Poppins", sans-serif;
        padding-top: 80px;
       }
-    // h2 {
-    //    display: grid;
-    //    justify-content: center;
-    //    align-content: center;
-    //    grid-gap: 10px;
-    //    position: fixed;
-    //    color:steelblue;
-    //    opacity: 60%;
-    //    font-size: 24px;
-    //    font-family: "Cormorant Garamond", serif;
-    //    margin: -90px auto;
-    //  }
     `
 
 
@@ -58,14 +40,25 @@ import styled from 'styled-components';
     margin-left: 450px;
     max-width: 530px;
     color:steelblue;
+    margin: -130px auto;
     opacity: 50%;
-    margin: -120px auto;
     display: grid;
     justify-content: center;
     align-content: center;
     grid-gap: 5px;
   
-
+   h3 {
+    display: block;
+    margin: -130px auto;
+    text-align: center;
+    animation:2s slide-up 2s forwards;
+       transform:translateY(270%);
+    @keyframes slide-up {
+    to {
+      transform:translateX(0%);
+    }
+  }
+}
   
    h2 {
     text-align: center;
