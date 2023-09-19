@@ -2,19 +2,19 @@ import { Outlet } from 'react-router-dom';
 import { Fragment } from 'react';
 import ProjectMenu from '../../components/projects/projects.component';
 
-import { MainContainer, SlideDown } from './home.styles';
+import { MainContainer, SlideDown, SlideUp } from './home.styles';
 
 const Home = () => {
 return(
   <Fragment>
     <MainContainer>
-      
-        
-        <h1>JaimeGinesky</h1>
+      <h1>JaimeGinesky</h1>
+      <SlideUp>
+      <h3>Hello, My Name is</h3>
+      </SlideUp>
         <SlideDown>
-        <h3>Hello, My Name is</h3>
-          <h2>Front-end Developer based in Los Angeles, CA</h2>
-          </SlideDown>
+        <h2>Front-end Developer based in Los Angeles, CA</h2>
+        </SlideDown>
         <footer>jfdh</footer>
      <ProjectMenu />
      <Outlet />
