@@ -3,22 +3,19 @@ import styled from 'styled-components';
 
 
   export const MainContainer = styled.div`
-  // display: grid;
-  // justify-content: center;
-  // align-content: center;
-  // position: absolute;
-  // height: 100vh;
-  // width: 100vw;
-  // background: var(--background-color);
-  
-//   h3 {
-//     position: absolute;
-//     font-family: "Cormorant Garamond", serif;
-//  }
    
-     h1 {
+
+    // display: grid;
+    // grid-template-columns: 50px 50px 50px 50px;
+    // grid-template-rows: auto;
+    // grid-template-areas: 
+    //    "header header header header"
+    //    "main main main main"
+    //    "footer footer footer footer';
+    // grid-gap: 10px;
+    
+    h1 {
       display: grid;
-      grid-template-columns: {1};
       grid-gap: 10px;
       justify-content: center;
       align-content: center;

@@ -8,11 +8,10 @@ import About from './routes/about/about.component';
 import Contact from './routes/contact/contact.component';
 
 
-import './App.css';
-
 const App = () => {
 
   return (
+  
     <Fragment>
      <Themes />
   <Routes>
