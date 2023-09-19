@@ -15,9 +15,9 @@ return(
         <SlideDown>
         <h2>Front-end Developer based in Los Angeles, CA</h2>
         </SlideDown>
-     <ProjectMenu />
      <Outlet />
      </MainContainer>
+    <ProjectMenu />
      <Footer />
     </Fragment>
 )

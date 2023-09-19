@@ -1,31 +1,33 @@
 import CategoryMenuItem  from '../category-menu-item/category-menu-item.component';
+import { ProjectContainer, Container } from '../projects/projects.styles';
 
 const categories = [
     {
       id: 1,
       title: 'E-Commerce Site',
-      description: 'Fascininating site that does things',
+      description: 'E-commerce site built with React',
     },
     {
       id: 2,
       title: 'Dictionary App',
-      description: 'Fascininating site that does things',
+      description: 'Dictionary App complete with definitions, synonyms, pronunciation and images',
     },
     {
       id: 3,
       title: 'Weather App',
-      description: 'Fascininating site that does things',
+      description: 'Weather App',
     }, {
       id: 4,
       title: 'Other Project',
-      description: 'Fascininating site that does things',
+      description: 'Rbots',
     },
   
   ]
 
-   export const ProjectMenu = () => {
+   const ProjectMenu = () => {
     return (
-       <div className="project-container">
+       <ProjectContainer>
+        <Container>
           {categories.map((category) => (
             <CategoryMenuItem key={category.id} category={category} />
           //   <div className='card'>
@@ -40,7 +42,8 @@ const categories = [
           // </div>
           // </div>
           ))}
-          </div>
+          </Container>
+          </ProjectContainer>
     
     )
   }
