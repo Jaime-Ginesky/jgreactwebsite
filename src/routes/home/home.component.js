@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Fragment } from 'react';
 import ProjectMenu from '../../components/projects/projects.component';
-
+import Footer from '../../components/footer/footer.component';
 import { MainContainer, SlideDown, SlideUp } from './home.styles';
 
 const Home = () => {
@@ -15,10 +15,10 @@ return(
         <SlideDown>
         <h2>Front-end Developer based in Los Angeles, CA</h2>
         </SlideDown>
-        <footer>jfdh</footer>
      <ProjectMenu />
      <Outlet />
      </MainContainer>
+     <Footer />
     </Fragment>
 )
 }
