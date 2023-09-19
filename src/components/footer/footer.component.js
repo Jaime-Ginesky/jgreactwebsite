@@ -1,18 +1,15 @@
-import { TextContainer, FooterLink, Source } from './footer.styles';
+import { TextContainer, FooterLink, Source, Row, Box } from './footer.styles';
 
 const Footer = () => {
     return(
-
-  <TextContainer>
-    <Source>
-    <span>
-    Open Source code by
-    </span>
-    </Source>
-    <FooterLink to= "#" >
-        Jaime Ginesky
-    </FooterLink>
-  </TextContainer>
+      <Box>
+        <TextContainer>
+            <Row>
+              <Source>Open source code by{' '}</Source>
+              <FooterLink href="#"> Jaime Ginesky</FooterLink>
+            </Row>
+        </TextContainer>
+     </Box>
     )
 }
 
