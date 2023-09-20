@@ -1,15 +1,21 @@
 import { Fragment } from 'react';
-import { CategoryContainer } from './category-menu-item.styles'
+import { Card, ProjectCardStyles, Image, Content } from './category-menu-item.styles';
 
 const CategoryMenuItem = ({ category }) => {
-    const { id, title, description } = category;
+    const { title, description } = category;
 
     return(
         <Fragment>
-            <CategoryContainer>
-        <title>{title}</title>
-        <p>{description}</p>
-        </CategoryContainer>
+            <Card>
+               <ProjectCardStyles>
+                    <Image>
+                        <h4>{title}</h4>
+                    </Image>
+                    <Content>
+                        <p>{description}</p>
+                    </Content>  
+                </ProjectCardStyles>  
+          </Card>
         </Fragment>
     )
 }

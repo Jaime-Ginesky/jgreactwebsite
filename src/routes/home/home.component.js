@@ -8,7 +8,7 @@ const Home = () => {
 return(
   <Fragment>
     <MainContainer>
-      <h1>JaimeGinesky</h1>
+      <h1>Jaime Ginesky</h1>
       <SlideUp>
       <h3>Hello, My Name is</h3>
       </SlideUp>

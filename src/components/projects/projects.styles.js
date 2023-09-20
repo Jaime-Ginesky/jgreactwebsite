@@ -7,6 +7,7 @@ padding: 80 px 60px;
    bottom: 100px;
    top: 500px;
    width: 100%;
+   margin: 0;
 
    @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -25,8 +26,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-//   max-width: 1500px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+ width: 100%;
 `
 
 // export const ContainerCard = styled.div`
