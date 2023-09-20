@@ -1,12 +1,25 @@
 import styled from 'styled-components';
 
+export const Box = styled.div`
+
+padding: 80 px 60px;
+   position: absolute;
+   bottom: 100px;
+   top: 500px;
+   width: 100%;
+
+   @media (max-width: 1000px) {
+    padding: 70px 30px;
+   }
+`
+
 export const ProjectContainer = styled.div`
 
-  position: relative;
-  display: grid;
-  align content: center;
-  max-height: 100vh;
-  width: 100%;
+  display: grid:
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  height:300px;
+  margin: 10px;
 `
 export const Container = styled.div`
   display: flex;

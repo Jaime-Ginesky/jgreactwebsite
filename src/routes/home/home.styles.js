@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
 
-  export const Wrapper = styled.div`
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 5px;
-     grid-auto-rows: minmax(100px, auto);
-  `;
+  // export const Wrapper = styled.div`
+  //    display: grid;
+  //    grid-template-columns: repeat(3, 1fr);
+  //    gap: 5px;
+  //    grid-auto-rows: minmax(100px, auto);
+  // `;
 
   export const MainContainer = styled.div`
    
-      grid-row: 1;
-      grid-column: 2;
-    // display: grid;
+    
+    
     // grid-template-columns: 50px 50px 50px 50px;
     // grid-template-rows: auto;
     // grid-template-areas: 

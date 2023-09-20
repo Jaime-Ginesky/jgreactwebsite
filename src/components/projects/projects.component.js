@@ -1,5 +1,5 @@
 import CategoryMenuItem  from '../category-menu-item/category-menu-item.component';
-import { ProjectContainer, Container } from '../projects/projects.styles';
+import { Box, ProjectContainer, Container } from '../projects/projects.styles';
 
 const categories = [
     {
@@ -26,6 +26,7 @@ const categories = [
 
    const ProjectMenu = () => {
     return (
+      <Box>
        <ProjectContainer>
         <Container>
           {categories.map((category) => (
@@ -44,6 +45,7 @@ const categories = [
           ))}
           </Container>
           </ProjectContainer>
+          </Box>
     
     )
   }

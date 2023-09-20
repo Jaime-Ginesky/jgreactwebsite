@@ -16,9 +16,9 @@ return(
         <h2>Front-end Developer based in Los Angeles, CA</h2>
         </SlideDown>
      <Outlet />
-     </MainContainer>
     <ProjectMenu />
      <Footer />
+     </MainContainer>
     </Fragment>
 )
 }
